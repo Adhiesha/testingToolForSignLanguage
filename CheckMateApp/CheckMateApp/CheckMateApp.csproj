@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8DBBADC-10E3-48F1-882A-DE40BEDC3124}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CheckMateApp</RootNamespace>
+    <AssemblyName>CheckMateApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="LeapCSharp.NET4.0, Version=3.1.2.0, Culture=neutral, PublicKeyToken=6e1b1368e71eba9b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Leap motion\New folder (2)\LeapDeveloperKit_3.1.2+40841_win\LeapSDK\lib\LeapCSharp.NET4.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanal.Designer.cs">
+      <DependentUpon>AdminPanal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPassword.Designer.cs">
+      <DependentUpon>AdminPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackUpForm.Designer.cs">
+      <DependentUpon>BackUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionManager.cs" />
+    <Compile Include="DBAccess.cs" />
+    <Compile Include="FogotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FogotPassword.Designer.cs">
+      <DependentUpon>FogotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LetterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LetterForm.Designer.cs">
+      <DependentUpon>LetterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageUsers.Designer.cs">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForm.Designer.cs">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultForm.Designer.cs">
+      <DependentUpon>ResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultViewForm.Designer.cs">
+      <DependentUpon>ResultViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelfForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelfForm.Designer.cs">
+      <DependentUpon>SelfForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SentenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SentenceForm.Designer.cs">
+      <DependentUpon>SentenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="SingUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingUp.Designer.cs">
+      <DependentUpon>SingUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserViewForm.Designer.cs">
+      <DependentUpon>UserViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WordForm.Designer.cs">
+      <DependentUpon>WordForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanal.resx">
+      <DependentUpon>AdminPanal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPassword.resx">
+      <DependentUpon>AdminPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackUpForm.resx">
+      <DependentUpon>BackUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FogotPassword.resx">
+      <DependentUpon>FogotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LetterForm.resx">
+      <DependentUpon>LetterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageUsers.resx">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForm.resx">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultForm.resx">
+      <DependentUpon>ResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultViewForm.resx">
+      <DependentUpon>ResultViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelfForm.resx">
+      <DependentUpon>SelfForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SentenceForm.resx">
+      <DependentUpon>SentenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingUp.resx">
+      <DependentUpon>SingUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserViewForm.resx">
+      <DependentUpon>UserViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WordForm.resx">
+      <DependentUpon>WordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgotPassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letter1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letter2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\word1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\word2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selfTest1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selfTest2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sentence1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sentence2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resul1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\result1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\result2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Leap.dll" />
+    <Content Include="LeapC.dll" />
+    <Content Include="LeapCSharp.NET4.0.dll" />
+    <Content Include="Resources\adminLock.png" />
+    <Content Include="Resources\back_img.png" />
+    <Content Include="Resources\Report_admin.png" />
+    <Content Include="Resources\Result_Admin.png" />
+    <Content Include="Resources\test.png" />
+    <Content Include="Resources\user-manage.png" />
+    <Content Include="Resources\user_view.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
